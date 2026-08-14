@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>App Lock — Privacy Policy</title>
+<style>
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;line-height:1.6;
+max-width:44rem;margin:0 auto;padding:2rem 1.25rem;color:#1a1a1a}
+h1{font-size:1.75rem;margin-bottom:.25rem}h2{font-size:1.15rem;margin-top:2rem}
+.updated{color:#666;font-size:.9rem;margin-top:0}
+table{border-collapse:collapse;width:100%;margin:1rem 0}
+th,td{border:1px solid #ddd;padding:.5rem .65rem;text-align:left;font-size:.95rem}
+th{background:#f5f5f5}code{background:#f3f3f3;padding:.1rem .3rem;border-radius:3px}
+</style></head><body>
+
+<h1>Privacy Policy — App Lock</h1>
+<p class="updated">Last updated: 5 August 2026</p>
+
+<p>App Lock protects apps on your device with a PIN, pattern or fingerprint, and stores
+photos and videos in an encrypted vault. This policy explains exactly what the app does
+and does not do with your information.</p>
+
+<h2>The short version</h2>
+<p>App Lock has no account and no server. Your PIN, your list of locked apps and your
+vault contents never leave your phone. We cannot see them, and we could not hand them
+over if asked, because we never receive them.</p>
+
+<h2>Information the app stores on your device</h2>
+<table>
+<tr><th>What</th><th>Where</th><th>Leaves the device?</th></tr>
+<tr><td>Your unlock PIN or pattern</td><td>Stored as a one-way PBKDF2 hash. The PIN itself is never written down, and the hash cannot be reversed.</td><td>No</td></tr>
+<tr><td>Your recovery password</td><td>Also stored as a one-way hash.</td><td>No</td></tr>
+<tr><td>Your recovery email address, if you set one</td><td>App-private storage on the device.</td><td>No</td></tr>
+<tr><td>Which apps you have chosen to lock</td><td>App-private database.</td><td>No</td></tr>
+<tr><td>Photos and videos you move into the vault</td><td>Encrypted with AES-256-GCM. The key is generated inside your device's hardware-backed keystore and cannot be exported.</td><td>No</td></tr>
+<tr><td>Your settings and chosen theme</td><td>App-private storage.</td><td>No</td></tr>
+</table>
+
+<p>App Lock does not have a backup or sync feature. If you uninstall the app, everything
+above is removed with it, including your vault. Please move files out of the vault before
+uninstalling.</p>
+
+<h2>Permissions, and why each one is needed</h2>
+<table>
+<tr><th>Permission</th><th>Why</th></tr>
+<tr><td>Usage access</td><td>To tell which app you have just opened, so a protected app can be locked. App Lock reads only the name of the app in the foreground.</td></tr>
+<tr><td>Display over other apps</td><td>To draw the unlock screen on top of the app you opened.</td></tr>
+<tr><td>Biometric</td><td>To offer fingerprint or face unlock. Your biometric data is handled entirely by Android and is never visible to App Lock.</td></tr>
+<tr><td>Run at startup</td><td>To resume protecting your apps after the phone restarts.</td></tr>
+<tr><td>Notifications</td><td>To show the ongoing notification Android requires while the lock is active.</td></tr>
+<tr><td>Photos and videos</td><td>No permission is requested, on any Android version. Choosing files to move into the vault goes through the system photo picker (images and video) or the system file picker (audio and other files), each of which gives the app access only to the items you pick. Removing the original after it has been safely encrypted is done by the system, which asks you to confirm.</td></tr>
+</table>
+
+<p>App Lock does <strong>not</strong> request camera access and never photographs anyone.
+It does not request device administrator access, location, contacts, microphone or your
+call log.</p>
+
+<h2>Advertising</h2>
+<p>App Lock is supported by advertising provided by Google AdMob. Ads appear inside App
+Lock's own screens. No advertising is shown on the unlock screen that appears over a
+protected app.</p>
+<p>Google may collect and use data as described in
+<a href="https://policies.google.com/technologies/partner-sites">Google's own policy</a>,
+including an advertising identifier, to show and measure ads. If you are in the United
+Kingdom or the European Economic Area, App Lock shows you Google's consent form before any
+ad is requested, and you can change your choice at any time from the app's settings.</p>
+<p>Your PIN, your list of locked apps and your vault contents are never shared with
+advertisers or with anyone else.</p>
+
+<h2>Analytics</h2>
+<p>App Lock includes no analytics SDK. We do not track how you use the app.</p>
+
+<h2>Children</h2>
+<p>App Lock is not directed at children under 13 and we do not knowingly collect
+information from them.</p>
+
+<h2>Your choices</h2>
+<p>You can revoke usage access or the overlay permission at any time in Android's
+settings; App Lock will stop locking apps. Uninstalling removes all data described above.
+If you are in the UK or EEA you can withdraw or change advertising consent from within the
+app.</p>
+
+<h2>Changes</h2>
+<p>If this policy changes, the date at the top of this page is updated. Material changes
+will be described in the app's release notes.</p>
+
+<h2>Contact</h2>
+<p>Questions about this policy: <a href="mailto:techtenstein@gmail.com">techtenstein@gmail.com</a></p>
+
+<hr><p style="font-size:.9rem"><a href="terms.html">Terms of Use</a></p>
+</body></html>
